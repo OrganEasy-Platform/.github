@@ -1,0 +1,76 @@
+name: 🚀 Feature
+description: Solicitar uma nova funcionalidade
+title: "[FEATURE] "
+labels:
+  - feature
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qual problema essa funcionalidade resolve?
+      placeholder: Hoje o usuário precisa...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução proposta
+      description: Descreva a funcionalidade.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de Aceitação
+      description: O que precisa acontecer para considerar essa tarefa concluída?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Regras de Negócio
+      description: Existem regras específicas?
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo
+      options:
+        - Core
+        - Authentication
+        - Organization
+        - Users
+        - Permissions
+        - Dashboard
+        - Finance
+        - RH
+        - WMS
+        - TMS
+        - Chat
+        - API
+        - Other
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      options:
+        - 🔴 Critical
+        - 🟠 High
+        - 🟡 Medium
+        - 🟢 Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Observações
