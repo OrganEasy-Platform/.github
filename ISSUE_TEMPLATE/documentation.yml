@@ -1,0 +1,50 @@
+name: 📚 Documentation
+description: Criar ou atualizar documentação
+title: "[DOC] "
+labels:
+  - documentation
+
+body:
+
+  - type: textarea
+    id: description
+    attributes:
+      label: O que precisa ser documentado?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo de documentação
+      options:
+        - API
+        - Arquitetura
+        - Banco de Dados
+        - Infraestrutura
+        - Tutorial
+        - Guia de Desenvolvimento
+        - Deploy
+        - ADR
+        - README
+        - Outro
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Público alvo
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      placeholder: |
+        - [ ] Conteúdo criado
+        - [ ] Revisado
+        - [ ] Links funcionando
+        - [ ] Exemplos atualizados
