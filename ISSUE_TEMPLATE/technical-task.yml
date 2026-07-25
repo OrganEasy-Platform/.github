@@ -1,0 +1,60 @@
+name: ⚙️ Technical Task
+description: Débito técnico, infraestrutura ou arquitetura
+title: "[TECH] "
+labels:
+  - technical-task
+
+body:
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: O que precisa ser feito?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      options:
+        - Refactoring
+        - Architecture
+        - Infrastructure
+        - CI/CD
+        - DevOps
+        - Security
+        - Database
+        - Performance
+        - Monitoring
+        - Testing
+        - Docker
+        - Kubernetes
+        - Dependency Update
+        - Code Quality
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Justificativa
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Plano Técnico
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impactos esperados
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      placeholder: |
+        - [ ] Código
+        - [ ] Testes
+        - [ ] Documentação
+        - [ ] Observabilidade
